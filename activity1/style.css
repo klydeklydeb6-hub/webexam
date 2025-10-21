@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: wheat;
+  font-family: Georgia, serif;
+}
+.card {
+  width: 250px;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+.card:hover { transform: translateY(-5px); }
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.card p {
+  margin-top: 15px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+.card:hover p {
+  opacity: 1;
+  max-height: 100px;
+}

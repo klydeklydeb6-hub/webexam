@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <img src="klyde.JPG.jpg" alt="Profile Photo">
+        <h1>Klyde Bermudez</h1>
+        <p>I am a Student Developer</p>
+        <button id="btn-aboutme">Show More</button>
+        <div id="info" class="hide">
+            <p>I am a self made programmer. My passion runs through my blood.</p>
+        </div>
+    </div>
+
+    <script>
+      const btn = document.getElementById("btn-aboutme");
+      const info = document.getElementById("info");
+
+      btn.addEventListener("click", () => {
+        info.classList.toggle("hide");
+        btn.textContent = info.classList.contains("hide") ? "Show More" : "Show Less";
+      });
+    </script>
+</body>
+</html>

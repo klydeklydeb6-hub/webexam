@@ -1,0 +1,69 @@
+/* Basic Reset and Layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* Container */
+.container {
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* Image Wrapper */
+.image-wrapper {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Toggle Button */
+#toggle {
+  padding: 12px 24px;
+  background-color: #29b6f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#toggle:hover {
+  background-color: #0288d1;
+}
